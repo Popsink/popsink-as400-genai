@@ -1,0 +1,10 @@
+streamlit==1.36.0
+openai==1.35.13
+pinecone-client==3.2.2
+langchain==0.2.6
+langchain-core==0.2.19
+langchain-community==0.2.1
+langchain-openai==0.1.16
+langchain-pinecone==0.1.1
+fastembed==0.3.1
+python-dotenv
