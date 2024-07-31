@@ -20,7 +20,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 
 api_key = os.getenv("PINECONE_API_KEY")
-index_name = os.getenv("PINECONE_COLLECTION")
+index_name = os.getenv("PINECONE_INDEX")
 embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 
 pc = Pinecone(api_key=api_key)
