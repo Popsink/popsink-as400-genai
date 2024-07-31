@@ -46,7 +46,7 @@ This repository contains a script to demonstrate a Change Data Capture (CDC) fro
     ```env
     PINECONE_API_KEY=your_pinecone_api_key
     OPENAI_API_KEY=your_openai_api_key
-    PINECONE_COLLECTION=your_pinecone_collection
+    PINECONE_INDEX=your_pinecone_index_name
     ```
 
 ### Running the Application
