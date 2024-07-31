@@ -19,8 +19,8 @@ from langchain_community.embeddings import FastEmbedEmbeddings
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 
-api_key = os.getenv["PINECONE_API_KEY"]
-index_name = os.getenv["PINECONE_COLLECTION"]
+api_key = os.getenv("PINECONE_API_KEY")
+index_name = os.getenv("PINECONE_COLLECTION")
 embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 
 pc = Pinecone(api_key=api_key)
@@ -29,7 +29,7 @@ vectorstore = PineconeVectorStore.from_existing_index(index_name, embeddings)
 
 qa = RetrievalQA.from_chain_type(
     llm=ChatOpenAI(
-        openai_api_key=os.getenv["OPENAI_API_KEY"],
+        openai_api_key=os.getenv("OPENAI_API_KEY"),
         model_name='gpt-4-turbo',
         temperature=0.0
     ),
