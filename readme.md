@@ -22,8 +22,8 @@ This repository contains a script to demonstrate a Change Data Capture (CDC) fro
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Popsink/popsink-as400-chatbot.git
-    cd popsink-as400-chatbot
+    git clone https://github.com/Popsink/popsink-as400-genai.git
+    cd popsink-as400-genai
     ```
 
 2. Create a virtual environment and activate it:
